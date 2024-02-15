@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+ background-image :url("https://wallup.net/wp-content/uploads/2019/09/25695-information-technology-big-data-collection-complex-database-physics-programming-code-numbers-tunnels-3d-cg-digital-art-light-psychedelic-computer.jpg") ;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: Arial, sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  text-align: center;
+  font-size: 32px;
+  margin-top: 20px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 500px;
+  width: 500px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: border-color 0.3s;
+}
+
+
+.select-container {
+  display: flex;
+  align-items: center;
+  background-color: rgb(255, 255, 255); /* White color */
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), /* Neon glow effect */
+               0 0 20px rgba(255, 255, 255, 0.6), /* Neon glow effect */
+               0 0 30px rgba(255, 255, 255, 0.4), /* Neon glow effect */
+               0 0 40px rgba(255, 255, 255, 0.2); /* Neon glow effect */
+               color: black;
+               height: 38px;
+               border-radius: 5px;
+}
+
+
+#container:hover {
+  border-color: rgba(255, 255, 255, 0.6); /* Change border color on hover */
+}
+
+.button-select-container {
+  display: flex;
+  align-items: center;
+}
+
+.button-container {
+  margin-right: 10px; /* Adjust margin as needed */
+}
+
+.bar {
+  width: 10px;
+  background-color: #03a9f4; /* Green color for bars */
+  margin: 1px;
+  transition: height 0.2s;
+}
+
+/* .bar.voilet {
+  background-color: #673ab7; 
+}
+
+.bar.blue {
+  background-color: #2196f3; 
+} */
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  margin: 10px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+button.sort-btn {
+  background-color: rgb(255, 255, 255); /* White color */
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), /* Neon glow effect */
+               0 0 20px rgba(255, 255, 255, 0.6), /* Neon glow effect */
+               0 0 30px rgba(255, 255, 255, 0.4), /* Neon glow effect */
+               0 0 40px rgba(255, 255, 255, 0.2); /* Neon glow effect */
+               color: black;
+}
+
+button.randomize-btn {
+  background-color: rgb(255, 255, 255); /* White color */
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), /* Neon glow effect */
+               0 0 20px rgba(255, 255, 255, 0.6), /* Neon glow effect */
+               0 0 30px rgba(255, 255, 255, 0.4), /* Neon glow effect */
+               0 0 40px rgba(255, 255, 255, 0.2); /* Neon glow effect */
+               color: black;
 }
