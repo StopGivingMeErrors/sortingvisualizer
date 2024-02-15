@@ -12,11 +12,21 @@ const App = () => {
   // Default sorting algorithm
 
   useEffect(() => {
-    init();
+    const init = () => {
+      // Define your init function here if it's not defined globally
+      for (let i = 0; i < n; i++) {
+        array[i] = Math.random();
+      }
+      showBars();
+    };
+  
+    init(); // Call init function here
+  
     // Initialize AudioContext when the component mounts
     const newAudioCtx = new (window.AudioContext || window.webkitAudioContext)();
     setAudioCtx(newAudioCtx);
-  }, []);
+  }, []); // Add init to the dependency array if it's defined within the component
+  
 
   const playNote = (freq) => {
     return new Promise((resolve, reject) => {
